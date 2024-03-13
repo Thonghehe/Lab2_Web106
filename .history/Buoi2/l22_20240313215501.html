@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            /* Hien thi dang cot */
+            flex-direction: column;
+            min-width: 100vh;
+
+        }
+
+        .header,
+        .footer {
+            background-color: rgb(9, 243, 25);
+            color: brown;
+            padding: 20px;
+            flex-shrink: 0;
+        }
+
+        .content {
+            background-color: antiquewhite;
+            padding: 20px;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .container {
+            position: relative;
+            min-height: 100%;
+        }
+
+        .footer {
+            background-color: rgb(248, 142, 3);
+            text-align: center;
+        }
+
+        @media only screen and(max-width:800px) {
+            .header .content .footer {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>My Firt Webpage</h1>
+        </div>
+        <div class="content">
+            <h2>What?</h2>
+            <p>Used to ask about the reason for something
+            </p>
+            <h2>What?</h2>
+            <p>Used to ask about the reason for something
+            </p>
+            <h2>What?</h2>
+            <p>Used to ask about the reason for something
+            </p>
+        </div>
+        <div class="footer">
+            <h3>Footer</h3>
+            <p>Day la footer</p>
+        </div>
+    </div>
+</body>
+
+</html>
